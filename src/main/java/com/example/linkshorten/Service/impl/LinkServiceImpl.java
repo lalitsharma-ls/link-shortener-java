@@ -40,7 +40,7 @@ public class LinkServiceImpl implements LinkService {
 
     Integer count= linkRepository.getLastLinkId()==null?0:linkRepository.getLastLinkId() + 1;
     StringBuilder linkId = new StringBuilder();
-    String finalShortUrl="http://ttnurl.tk/";
+    String finalShortUrl="https://ttnurl.tk/";
     int tempCount=count;
     if (tempCount==0){
       finalShortUrl=finalShortUrl+String.valueOf(base64chars[0]);
